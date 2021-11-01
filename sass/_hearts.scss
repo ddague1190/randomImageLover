@@ -1,0 +1,27 @@
+.heart {
+  z-index: 5;
+  animation: heartfade 6s linear;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #fc2a62;
+  box-shadow: 1rem 1rem 1rem white;
+  position: absolute;
+  height: 30px;
+  width: 45px;
+  border-radius: 15px 0px 0px 15px;
+}
+.heart:before {
+  z-index: 5;
+
+  transform: rotate(45deg);
+}
+.heart:after {
+  left: 10.5px;
+  transform: rotate(135deg);
+}
